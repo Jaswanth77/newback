@@ -59,7 +59,88 @@ class ApplicationModelSerializer(serializers.ModelSerializer):
         instance.save()
         return instance
     
-    
+    # def update(self,instance,validated_data):
+    #     print("hello")
+    #     print("neet_score_card:"+instance.neet_score_card)
+    #     neet_score_card = validated_data.get('neet_score_card',None)
+    #     conduct_certificate =validated_data.get('conduct_certificate',None)
+    #     neet_admit_card = validated_data.get('neet_admit_card',None)
+    #     allotment_order_sslc_certificate = validated_data.get('allotment_order_sslc_certificate',None)
+    #     hsc_certificate = validated_data.get('hsc_certificate',None)
+    #     transfer_certificate = validated_data.get('transfer_certificate',None)
+    #     community_certificate = validated_data.get('community_certificate',None)
+    #     aadhaar_card = validated_data.get('aadhaar_card',None)
+    #     eligibility_migration_certificates = validated_data.get('eligibility_migration_certificates',None)
+    #     nativity_certificate = validated_data.get('nativity_certificate',None)
+    #     income_certificate = validated_data.get('income_certificate',None)
+    #     physical_fitness_certificate = validated_data.get('physical_fitness_certificate',None)
+    #     declaration_form = validated_data.get('declaration_form',None)
+    #     anti_ragging_bond = validated_data.get('anti_ragging_bond',None)
+    #     physically_handicapped_certificate = validated_data.get('physically_handicapped_certificate',None)
 
+    #     if neet_score_card:
+    #         instance.neet_score_card.delete()  
+    #         instance.neet_score_card.save(neet_score_card.name, neet_score_card)
+
+    #     if conduct_certificate:
+    #         instance.conduct_certificate.delete()  # Delete the existing file
+    #         instance.conduct_certificate.save(conduct_certificate.name, conduct_certificate)  # Save the new file
+
+    #     if neet_admit_card:
+    #         instance.neet_admit_card.delete()  # Delete the existing file
+    #         instance.neet_admit_card.save(neet_admit_card.name, neet_admit_card)  # Save the new file
+
+    #     if allotment_order_sslc_certificate:
+    #         instance.allotment_order_sslc_certificate.delete()  # Delete the existing file
+    #         instance.allotment_order_sslc_certificate.save(allotment_order_sslc_certificate.name, allotment_order_sslc_certificate)  # Save the new file
+
+    #     if hsc_certificate:
+    #         instance.hsc_certificate.delete()  # Delete the existing file
+    #         instance.hsc_certificate.save(hsc_certificate.name, hsc_certificate)  # Save the new file
+
+    #     if transfer_certificate:
+    #         instance.transfer_certificate.delete()  # Delete the existing file
+    #         instance.transfer_certificate.save(transfer_certificate.name,transfer_certificate )  # Save the new file
+
+    #     if community_certificate:
+    #         instance.community_certificate.delete()  # Delete the existing file
+    #         instance.community_certificate.save(community_certificate.name, community_certificate)  # Save the new file
+
+        
+    #     if aadhaar_card:
+    #         instance.aadhaar_card.delete()  # Delete the existing file
+    #         instance.aadhaar_card.save(aadhaar_card.name, aadhaar_card)  # Save the new file
+
+    #     if eligibility_migration_certificates:
+    #         instance.eligibility_migration_certificates.delete()  # Delete the existing file
+    #         instance.eligibility_migration_certificates.save(eligibility_migration_certificates.name, eligibility_migration_certificates)  # Save the new file
+
+    #     if nativity_certificate:
+    #         instance.nativity_certificate.delete()  # Delete the existing file
+    #         instance.nativity_certificate.save(nativity_certificate.name, nativity_certificate)  # Save the new file
+
+    #     if income_certificate:
+    #         instance.income_certificate.delete()  # Delete the existing file
+    #         instance.income_certificate.save(income_certificate.name,income_certificate )  # Save the new file
+
+    #     if physical_fitness_certificate:
+    #         instance.physical_fitness_certificate.delete()  # Delete the existing file
+    #         instance.physical_fitness_certificate.save(physical_fitness_certificate.name, physical_fitness_certificate)  # Save the new file
+
+
+    #     if declaration_form:
+    #         instance.declaration_form.delete()  # Delete the existing file
+    #         instance.declaration_form.save(declaration_form.name, declaration_form)  # Save the new file
+
+    #     if anti_ragging_bond:
+    #         instance.anti_ragging_bond.delete()  # Delete the existing file
+    #         instance.anti_ragging_bond.save(anti_ragging_bond.name, anti_ragging_bond)  # Save the new file
+        
+    #     if physically_handicapped_certificate:
+    #         instance.physically_handicapped_certificate.delete()  # Delete the existing file
+    #         instance.physically_handicapped_certificate.save(physically_handicapped_certificate.name, physically_handicapped_certificate)  # Save the new file
+
+    #     instance.save
+    #     return instance
 
 

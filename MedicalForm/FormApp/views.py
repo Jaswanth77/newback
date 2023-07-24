@@ -37,6 +37,8 @@ class ApplicationFormRetrieveUpdateView(generics.RetrieveUpdateAPIView):
             serializer.is_valid()
             print(instance.ar_number)
             print(serializer.errors)
+            print(instance.aadhaar_card)
+            print(instance.neet_admit_card)
             self.perform_update(serializer)
             return Response(serializer.data)
         except Exception as e:

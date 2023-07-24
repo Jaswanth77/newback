@@ -8,7 +8,7 @@ def image_path_and_rename(instance, filename):
     # get filename
     filename = '{}.{}'.format(instance.ar_number, ext)
     # return the whole path to the file
-    return os.path.join(upload_to+'/'+folder+'/', filename)
+    return os.path.join(upload_to, filename)
 
 def pdf_path_and_rename(instance, filename):
     folder = str(instance.ar_number)
@@ -17,7 +17,7 @@ def pdf_path_and_rename(instance, filename):
     # get filename
     filename = '{}.{}'.format(instance.ar_number, ext)
     # return the whole path to the file
-    return os.path.join(upload_to+'/'+folder+'/', filename)
+    return os.path.join(upload_to, filename)
 
 class ApplicationFormModel(models.Model):
     community_choices = [
@@ -201,7 +201,8 @@ class ApplicationFormModel(models.Model):
     neet_score_card = models.FileField(upload_to=pdf_path_and_rename,null=True,blank=True)
     conduct_certificate = models.FileField(upload_to=pdf_path_and_rename,null=True,blank=True)
     neet_admit_card = models.FileField(upload_to=pdf_path_and_rename,null=True,blank=True)
-    allotment_order_sslc_certificate = models.FileField(upload_to=pdf_path_and_rename,null=True,blank=True)
+    allotment_order_payment_certificate = models.FileField(upload_to=pdf_path_and_rename,null=True,blank=True)
+    sslc_certificate = models.FileField(upload_to=pdf_path_and_rename,null=True,blank=True)
     hsc_certificate = models.FileField(upload_to=pdf_path_and_rename,null=True,blank=True)
     transfer_certificate = models.FileField(upload_to=pdf_path_and_rename,null=True,blank=True)
     community_certificate = models.FileField(upload_to=pdf_path_and_rename,null=True,blank=True)
