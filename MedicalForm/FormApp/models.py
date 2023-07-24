@@ -218,3 +218,4 @@ class ApplicationFormModel(models.Model):
     def __str__(self):
         return self.email
 
+'''"http://192.168.29.197:8888/form/application-forms/"'''
